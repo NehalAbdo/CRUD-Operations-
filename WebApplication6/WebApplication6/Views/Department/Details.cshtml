@@ -1,0 +1,15 @@
+﻿@model Department
+@{
+    ViewData["Title"] = "Details";
+}
+<h1>Details Of @Model.Name Department</h1>
+
+<partial name="DPartialViews/DeleteEditPartialView"></partial>
+
+<div class="mt-5">
+
+    <a asp-action="Edit" class="btn btn-info" asp-route-id="@Model.Id">Edit</a>
+    <a asp-action="Index" class="btn btn-warning">Back To List</a>
+
+
+</div>

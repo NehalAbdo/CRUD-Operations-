@@ -1,0 +1,19 @@
+﻿@model EmployeeVM
+@{
+    ViewData["Title"] = "Delete";
+}
+
+
+<h1>Do you want to delete @Model.Name ?</h1>
+<form method="post" asp-action="Delete">
+    <partial name="PartialViews/_DeleteDetailsPartialView"></partial>
+
+<div class="mt-5">
+    <input type="submit" value="Delete" class="btn btn-danger" />
+    <a asp-action="Index" class="btn btn-light ">Cancel</a>
+
+
+</div>
+
+</form>
+
